@@ -216,6 +216,8 @@ filegroup {
 // Maven coordinate: org.jetbrains.kotlinx:kotlinx-coroutines-guava
 java_library {
     name: "kotlinx_coroutines_guava",
+    sdk_version: "current",
+    min_sdk_version: "28",
     host_supported: true,
     srcs: ["integration/kotlinx-coroutines-guava/src/**/*.kt"],
     kotlincflags: [
@@ -257,7 +259,6 @@ java_library {
     ],
     visibility: ["//visibility:public"],
 }
-
 
 // Maven coordinate: org.jetbrains.kotlinx:kotlinx-coroutines-rx2
 java_library {
